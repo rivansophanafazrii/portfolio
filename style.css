@@ -1075,10 +1075,6 @@ header.sticky {
     font-size: 0.9rem;
   }
 
-  .logo span {
-    display: none;
-  }
-
   /* Hero Section */
   .hero {
     padding: 0 4%;
@@ -1087,7 +1083,7 @@ header.sticky {
   }
 
   .hero-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 30px;
     text-align: center;
   }
@@ -1106,6 +1102,11 @@ header.sticky {
   }
 
   .hero-btns {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-right {
     display: flex;
     justify-content: center;
   }
@@ -1285,6 +1286,8 @@ header.sticky {
   .btn-send {
     width: 100%;
     justify-self: stretch;
+    display: flex;
+    justify-content: center;
   }
 
   /* Footer */
@@ -1314,6 +1317,10 @@ header.sticky {
     font-size: 0.85rem;
   }
 
+  .logo span {
+    display: inline;
+  }
+
   .nav-links li {
     margin: 15px 0;
   }
@@ -1329,6 +1336,12 @@ header.sticky {
     padding-top: 70px;
   }
 
+  .hero-container {
+    flex-direction: column-reverse;
+    gap: 25px;
+    text-align: center;
+  }
+
   .hero-left h1 {
     font-size: 1.8rem;
     line-height: 1.2;
@@ -1340,6 +1353,11 @@ header.sticky {
 
   .role-text {
     font-size: 1rem;
+  }
+
+  .hero-right {
+    display: flex;
+    justify-content: center;
   }
 
   .profile-card {
@@ -1504,6 +1522,8 @@ header.sticky {
   .btn-send {
     width: 100%;
     font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
   }
 
   /* Footer */
@@ -1538,6 +1558,12 @@ header.sticky {
     padding-top: 65px;
   }
 
+  .hero-container {
+    flex-direction: column-reverse;
+    gap: 20px;
+    text-align: center;
+  }
+
   .hero-left h1 {
     font-size: 1.6rem;
   }
@@ -1548,6 +1574,11 @@ header.sticky {
 
   .role-text {
     font-size: 0.95rem;
+  }
+
+  .hero-right {
+    display: flex;
+    justify-content: center;
   }
 
   .profile-card {
