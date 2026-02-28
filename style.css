@@ -296,6 +296,7 @@ header.sticky {
   background: #f5f6fa;
   position: relative;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .about-container {
@@ -352,7 +353,6 @@ header.sticky {
 /* Sisi Konten */
 .about-content {
   flex: 1;
-  overflow-x: hidden;
 }
 
 .sub-title {
