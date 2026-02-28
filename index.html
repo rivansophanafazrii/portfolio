@@ -24,6 +24,9 @@
 
     <!-- Sweetalert -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header -->
@@ -84,16 +87,20 @@
       <section class="about" id="about">
         <div class="about-container">
           <div class="about-visual">
-            <div class="about-img-wrapper">
-              <img src="img/profile.jpg" alt="Rivan Working" />
-              <div class="about-shape"></div>
+            <div data-aos="zoom-in">
+              <div class="about-img-wrapper">
+                <img src="img/profile.jpg" alt="Rivan Working" />
+                <div class="about-shape"></div>
+              </div>
             </div>
           </div>
 
           <div class="about-content">
-            <span class="sub-title">Discovery My Story</span>
-            <h2>Tentang <span>Saya</span></h2>
-            <p>
+            <span class="sub-title" data-aos="fade-down"
+              >Discovery My Story</span
+            >
+            <h2 data-aos="fade-up">Tentang <span>Saya</span></h2>
+            <p data-aos="fade-right">
               Halo! Saya <strong>Rivan Sophana Fazri</strong>, seorang
               pembelajar yang sedang mendalami dunia pemrograman web. Perjalanan
               saya dimulai dari rasa penasaran tentang bagaimana sebuah website
@@ -101,7 +108,7 @@
               teknologi seperti HTML, CSS, dan JavaScript untuk membangun
               pengalaman digital yang menarik.
             </p>
-            <p>
+            <p data-aos="fade-left">
               Memiliki minat yang besar di bidang IT membuat saya selalu haus
               akan tantangan baru. Bagi saya, setiap baris kode yang error
               adalah kesempatan untuk belajar lebih banyak.
@@ -117,8 +124,7 @@
                 <p>Projek Selesai</p>
               </div>
             </div> -->
-
-            <a href="#contact" class="btn">Hubungi Saya</a>
+            <a href="#contact" class="btn" data-aos="fade-down">Hubungi Saya</a>
           </div>
         </div>
       </section>
@@ -128,8 +134,8 @@
       <section class="skills-marquee" id="skills">
         <div class="container">
           <div class="section-header">
-            <span class="sub-title">Expertise</span>
-            <h2>My <span>Tech Stack</span></h2>
+            <span class="sub-title" data-aos="fade-down">Expertise</span>
+            <h2 data-aos="fade-up">My <span>Tech Stack</span></h2>
           </div>
 
           <div class="marquee-container">
@@ -186,12 +192,16 @@
       <section class="certificates" id="certificates">
         <div class="container">
           <div class="section-header">
-            <span class="sub-title">Achievements</span>
-            <h2>My <span>Certifications</span></h2>
+            <span class="sub-title" data-aos="fade-down">Achievements</span>
+            <h2 data-aos="fade-up">My <span>Certifications</span></h2>
           </div>
 
           <div class="cert-grid">
-            <div class="cert-card" onclick="openCertDetail('web-dev')">
+            <div
+              class="cert-card"
+              onclick="openCertDetail('web-dev')"
+              data-aos="fade-right"
+            >
               <div class="cert-badge">6 Certificates</div>
               <div class="cert-icon"><i class="fas fa-code"></i></div>
               <div class="cert-info">
@@ -203,7 +213,11 @@
               </div>
             </div>
 
-            <div class="cert-card" onclick="openCertDetail('ai')">
+            <div
+              class="cert-card"
+              onclick="openCertDetail('ai')"
+              data-aos="fade-up"
+            >
               <div class="cert-badge">4 Certificates</div>
               <div class="cert-icon"><i class="fas fa-robot"></i></div>
               <div class="cert-info">
@@ -215,7 +229,11 @@
               </div>
             </div>
 
-            <div class="cert-card" onclick="openCertDetail('other')">
+            <div
+              class="cert-card"
+              onclick="openCertDetail('other')"
+              data-aos="fade-left"
+            >
               <div class="cert-badge">3 Certificates</div>
               <div class="cert-icon"><i class="fas fa-ellipsis-h"></i></div>
               <div class="cert-info">
@@ -243,12 +261,12 @@
       <section class="contact" id="contact">
         <div class="container">
           <div class="section-header">
-            <span class="sub-title">Get In Touch</span>
-            <h2>Contact <span>Me</span></h2>
+            <span class="sub-title" data-aos="fade-down">Get In Touch</span>
+            <h2 data-aos="fade-up">Contact <span>Me</span></h2>
           </div>
 
           <div class="contact-wrapper">
-            <div class="contact-info">
+            <div class="contact-info" data-aos="fade-right">
               <div class="info-card">
                 <div class="info-item">
                   <div class="icon-box"><i class="fas fa-envelope"></i></div>
@@ -291,7 +309,7 @@
               </div>
             </div>
 
-            <div class="contact-form">
+            <div class="contact-form" data-aos="zoom-in">
               <form action="" method="POST" name="submit-to-google-sheet">
                 <div class="input-group">
                   <input
@@ -338,6 +356,18 @@
     </footer>
     <!-- Footer Akihir -->
 
+    <!-- JavaScript -->
     <script src="script.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        // duration: 100, // Anda juga bisa mengatur easing di sini
+        easing: "ease-in-out",
+        delay: 400
+      });
+    </script>
   </body>
 </html>
