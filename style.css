@@ -352,6 +352,7 @@ header.sticky {
 /* Sisi Konten */
 .about-content {
   flex: 1;
+  overflow-x: hidden;
 }
 
 .sub-title {
