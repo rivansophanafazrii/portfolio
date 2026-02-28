@@ -295,7 +295,7 @@ header.sticky {
   padding: 100px 10%;
   background: #f5f6fa;
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .about-container {
