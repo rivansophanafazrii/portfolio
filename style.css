@@ -10,15 +10,15 @@
 :root {
   --primary-grad: linear-gradient(
     135deg,
-    #6366f1 0%,
-    #a855f7 50%,
-    #ec4899 100%
+    #0984e3 0%,
+    #00cec9 50%,
+    #39f5f2 100%
   );
   --glass-bg: rgba(255, 255, 255, 0.05);
 }
 
 body {
-  background-color: #0f172a; /*Dark background agar gradient terlihat menyala */
+  background-color: #F5f6fa; /*Dark background agar gradient terlihat menyala */
 }
 
 /* header styling */
@@ -32,7 +32,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 1000; /* Supaya selalu di depan */
-  background: rgba(15, 23, 42, 0.8); /* Tambah background transparan tipis */
+  background: rgba(255, 255, 255, 0.8); /* Tambah background transparan tipis */
   backdrop-filter: blur(10px);
 }
 
@@ -45,7 +45,7 @@ header.sticky {
 }
 
 .logo {
-  color: #fff;
+  color: #0984e3;
   font-weight: 800;
   letter-spacing: 1px;
   font-size: 1.2rem;
@@ -68,7 +68,7 @@ header.sticky {
 }
 
 .nav-links a {
-  color: #fff;
+  color: #0984e3;
   text-decoration: none;
   font-weight: 500;
   transition: 0.3s;
@@ -84,16 +84,16 @@ header.sticky {
 .btn {
   padding: 10px 25px;
   background: var(--primary-grad);
-  color: #fff;
+  color: #0984e3;
   text-decoration: none;
   border-radius: 50px;
   font-weight: 600;
   transition: 0.3s;
-  box-shadow: 0 10px 20px rgba(236, 72, 153, 0.5);
+  box-shadow: 0 10px 20px rgba(72, 230, 236, 0.5);
 }
 
 .btn:hover {
-  transform: 0 15px 25px rgba(236, 72, 153, 0.5);
+  transform: 0 15px 25px rgba(72, 230, 236, 0.5);
 }
 
 /* Container Utama */
@@ -104,7 +104,7 @@ header.sticky {
   align-items: center;
   padding: 0 10%;
   overflow: hidden;
-  background: #0f172a; /* Warna dasar gelap */
+  background: #F5f6fa; /* Warna dasar gelap */
 }
 
 /* Background Blobs (Shape Gradient Blur) */
@@ -120,12 +120,12 @@ header.sticky {
 }
 
 .blob-1 {
-  background: #6366f1;
+  background: #0984e3;
   top: -10%;
   left: -10%;
 }
 .blob-2 {
-  background: #ec4899;
+  background: #00cec9;
   bottom: -10%;
   right: -5%;
   animation-delay: -5s;
@@ -164,7 +164,7 @@ header.sticky {
 
 .hero-left {
   flex: 1.2;
-  color: #fff;
+  color: #0984e3;
 }
 .hero-right {
   flex: 0.8;
@@ -188,7 +188,7 @@ header.sticky {
 /* --- [BARU] Style untuk Typing Effect --- */
 .role-text {
   font-size: 1.5rem;
-  color: #ec4899; /* Warna pink neon */
+  color: #00cec9; /* Warna cyan neon */
   font-weight: 500;
   margin-bottom: 30px;
   display: flex;
@@ -200,7 +200,7 @@ header.sticky {
   display: inline-block;
   margin-left: 5px;
   animation: blink 1s infinite;
-  color: #fff;
+  color: #0984e3;
 }
 
 @keyframes blink {
@@ -218,9 +218,9 @@ header.sticky {
   position: relative;
   z-index: 1;
   padding: 10px; /* Jarak antara border luar dan foto */
-  background: linear-gradient(135deg, #6366f1, #ec4899);
+  background: linear-gradient(135deg, #0984e3, #00cec9);
   border-radius: 50%; /* Membuat lingkaran */
-  box-shadow: 0 0 50px rgba(99, 102, 241, 0.5); /* Glow shadow */
+  box-shadow: 0 0 50px rgba(99, 241, 229, 0.5); /* Glow shadow */
 }
 
 .profile-card {
@@ -228,8 +228,8 @@ header.sticky {
   height: 350px;
   border-radius: 50%;
   overflow: hidden;
-  background: #0f172a;
-  border: 5px solid #0f172a;
+  background: #F5f6fa;
+  border: 5px solid #F5f6fa;
 }
 
 .profile-card img {
@@ -247,11 +247,11 @@ header.sticky {
   font-size: 1.5rem;
 }
 .social-links a {
-  color: #fff;
+  color: #0984e3;
   transition: 0.3s;
 }
 .social-links a:hover {
-  color: #ec4899;
+  color: #00cec9;
   transform: translateY(-5px);
 }
 
@@ -270,7 +270,7 @@ header.sticky {
 }
 
 .section-header .sub-title {
-  color: #6366f1;
+  color: #0984e3;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -280,7 +280,7 @@ header.sticky {
 
 .section-header h2 {
   font-size: 3rem;
-  color: #fff !important; /* Paksa warna putih agar tidak hitam */
+  color: #0984e3 !important; /* Paksa warna putih agar tidak hitam */
   margin-top: 10px;
 }
 
@@ -293,7 +293,7 @@ header.sticky {
 /* --- SECTION ABOUT --- */
 .about {
   padding: 100px 10%;
-  background: #0f172a;
+  background: #F5f6fa;
   position: relative;
   overflow: hidden;
 }
@@ -318,12 +318,12 @@ header.sticky {
   border-radius: 30px;
   overflow: hidden;
   z-index: 2;
-  border: 5px solid rgba(255, 255, 255, 0.1);
-  background: linear-gradient(135deg, #6366f1, #a855f7);
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #0984e3, #00cec9);
 }
 
 .about-img-wrapper:hover {
-  box-shadow: 0 10px 20px rgba(236, 72, 153, 0.5);
+  box-shadow: 0 10px 20px rgba(72, 230, 236, 0.5);
 }
 
 .about-img-wrapper img {
@@ -343,7 +343,7 @@ header.sticky {
   right: -20px;
   width: 100%;
   height: 100%;
-  border: 5px solid #6366f1;
+  border: 5px solid #0984e3;
   border-radius: 30px;
   z-index: -1;
   animation: floatAnim 10s infinite alternate;
@@ -355,7 +355,7 @@ header.sticky {
 }
 
 .sub-title {
-  color: #6366f1;
+  color: #0984e3;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -364,7 +364,7 @@ header.sticky {
 
 .about-content h2 {
   font-size: 3rem;
-  color: #fff;
+  color: #0984e3;
   margin: 15px 0;
 }
 
@@ -389,7 +389,7 @@ header.sticky {
 
 .stat-item h4 {
   font-size: 2rem;
-  color: #fff;
+  color: #0984e3;
   font-weight: 800;
 }
 
@@ -401,7 +401,7 @@ header.sticky {
 /* --- SECTION SKILLS INFINITE --- */
 .skills-marquee {
   padding: 80px 0; /* Padding vertikal saja, horizontal dikosongkan agar marquee full width */
-  background: #0f172a;
+  background: #F5f6fa;
   overflow: hidden; /* Penting agar tidak ada scrollbar horizontal */
 }
 
@@ -469,9 +469,9 @@ header.sticky {
 
 /* Style Kapsul Skill */
 .skill-item {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #fff;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  color: #0984e3;
   padding: 12px 25px;
   border-radius: 50px;
   font-weight: 500;
@@ -485,13 +485,13 @@ header.sticky {
 
 .skill-item i {
   font-size: 1.3rem;
-  /* Default warna ikon menggunakan gradient pink/indigo */
-  color: #6366f1;
+  /* Default warna ikon menggunakan gradient cyan/indigo */
+  color: #0984e3;
 }
 
 .skill-item:hover {
-  background: rgba(99, 102, 241, 0.1);
-  border-color: #6366f1;
+  background: rgba(99, 241, 227, 0.1);
+  border-color: #0984e3;
   transform: translateY(-5px);
   box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
 }
@@ -504,7 +504,7 @@ header.sticky {
 /* --- SECTION CERTIFICATES --- */
 .certificates {
   padding: 100px 10%;
-  background: #0f172a;
+  background: #F5f6fa;
 }
 
 .cert-logo {
@@ -518,7 +518,7 @@ header.sticky {
 }
 
 .cert-logo:hover {
-  color: #6366f1;
+  color: #0984e3;
 }
 
 /* Grid Cards */
@@ -529,8 +529,8 @@ header.sticky {
 }
 
 .cert-card {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 25px;
   padding: 40px 30px;
   position: relative;
@@ -541,19 +541,19 @@ header.sticky {
 
 .cert-card:hover {
   transform: translateY(-10px) scale(1.02);
-  border-color: #ec4899;
+  border-color: #00cec9;
   background: rgba(255, 255, 255, 0.05);
   box-shadow:
     0 20px 40px rgba(0, 0, 0, 0.4),
-    0 10 20px rgba(236, 72, 153, 0.5);
+    0 10 20px rgba(72, 230, 236, 0.5);
 }
 
 .cert-badge {
   position: absolute;
   top: 20px;
   right: 20px;
-  background: rgba(99, 102, 241, 0.1);
-  color: #6366f1;
+  background: rgba(99, 201, 241, 0.1);
+  color: #0984e3;
   padding: 5px 15px;
   border-radius: 50px;
   font-size: 0.8rem;
@@ -570,7 +570,7 @@ header.sticky {
 }
 
 .cert-info h3 {
-  color: #fff;
+  color: #0984e3;
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
@@ -581,7 +581,7 @@ header.sticky {
 }
 
 .view-link {
-  color: #ec4899;
+  color: #00cec9;
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -595,7 +595,7 @@ header.sticky {
   position: fixed;
   inset: 0;
   z-index: 9999;
-  background: rgba(15, 23, 42, 0.85); /* Sedikit lebih transparan */
+  background: rgba(255, 255, 255, 0.85); /* Sedikit lebih transparan */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   /* Kunci agar bisa di-scroll */
@@ -609,12 +609,12 @@ header.sticky {
   max-width: 900px;
   /* Margin auto memastikan modal di tengah tapi tetap bisa di-scroll dari atas */
   margin: 40px auto;
-  background: #1e293b; /* Memberi warna solid agar sertifikat lebih menonjol */
+  background: #F5f6fa; /* Memberi warna solid agar sertifikat lebih menonjol */
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 50px 30px;
   text-align: center;
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 25px 50px -12px rgba(40, 244, 255, 0.5);
   animation: modalFadeIn 0.4s ease-out forwards;
   overflow-y: auto;
 }
@@ -640,7 +640,7 @@ header.sticky {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  color: #fff;
+  color: #0984e3;
   font-size: 1.8rem;
   display: flex;
   justify-content: center;
@@ -651,15 +651,15 @@ header.sticky {
 }
 
 .close-modal:hover {
-  background: #ec4899; /* Berubah jadi pink neon saat disentuh */
-  color: #fff;
+  background: #00cec9; /* Berubah jadi cyan neon saat disentuh */
+  color: #0984e3;
   border-color: transparent;
   transform: rotate(90deg) scale(1.1); /* Efek putar yang keren */
-  box-shadow: 0 10px 20px rgba(236, 72, 153, 0.5);
+  box-shadow: 0 10px 20px rgba(72, 230, 236, 0.5);
 }
 
 #modalTitle {
-  color: #fff;
+  color: #0984e3;
   font-size: 2.2rem;
   margin-bottom: 10px;
   padding-right: 40px; /* Agar judul tidak bertabrakan dengan tombol close */
@@ -674,7 +674,7 @@ header.sticky {
 }
 
 .gallery-item {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(195, 195, 195, 0.2);
   padding: 15px;
   border-radius: 15px;
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -682,9 +682,9 @@ header.sticky {
 }
 
 .gallery-item:hover {
-  border-color: #6366f1;
+  border-color: #0984e3;
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(55, 64, 235, 0.5);
+  box-shadow: 0 10px 20px rgba(55, 235, 220, 0.5);
 }
 
 .gallery-item img {
@@ -703,7 +703,7 @@ header.sticky {
 /* --- SECTION CONTACT --- */
 .contact {
   padding: 100px 10%;
-  background: #0f172a;
+  background: #F5f6fa;
   position: relative;
 }
 
@@ -718,7 +718,7 @@ header.sticky {
 
 /* Kiri: Info Card */
 .contact-info .info-card {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 40px;
   border-radius: 25px;
@@ -741,13 +741,13 @@ header.sticky {
   justify-content: center;
   align-items: center;
   font-size: 1.2rem;
-  color: #fff;
+  color: #0984e3;
   /* box-shadow: 0 5px 15px rgba(236, 72, 153, 0.3); */
-  box-shadow: 0 10px 20px rgba(236, 72, 153, 0.5);
+  box-shadow: 0 10px 20px rgba(72, 230, 236, 0.5);
 }
 
 .info-item h4 {
-  color: #fff;
+  color: #0984e3;
   font-size: 1.1rem;
   margin-bottom: 3px;
 }
@@ -770,7 +770,7 @@ header.sticky {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #0984e3;
   transition: 0.3s;
 }
 
@@ -778,7 +778,7 @@ header.sticky {
   background: var(--primary-grad);
   border-color: transparent;
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(236, 72, 153, 0.5);
+  box-shadow: 0 10px 20px rgba(72, 230, 236, 0.5);
 }
 
 /* Kanan: Contact Form */
@@ -791,10 +791,10 @@ header.sticky {
 .input-group textarea {
   width: 100%;
   padding: 15px 20px;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 12px;
-  color: #fff;
+  color: #0984e3;
   font-size: 1rem;
   outline: none;
   transition: 0.3s;
@@ -802,7 +802,7 @@ header.sticky {
 
 .input-group input:focus,
 .input-group textarea:focus {
-  border-color: #6366f1;
+  border-color: #0984e3;
   background: rgba(255, 255, 255, 0.08);
   box-shadow: 0 0 15px rgba(99, 102, 241, 0.2);
 }
@@ -821,7 +821,7 @@ header.sticky {
   padding: 40px 10%;
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
-  background: #0f172a;
+  background: #F5f6fa;
 }
 
 .footer p {
@@ -848,7 +848,7 @@ header.sticky {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  background-color: white;
+  background-color: #00cec9;
   transition: 0.3s;
 }
 
@@ -875,7 +875,7 @@ header.sticky {
     top: 0;
     height: 100vh;
     width: 70%;
-    background: rgba(15, 23, 42, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
     flex-direction: column;
     justify-content: center;
@@ -898,7 +898,7 @@ header.sticky {
   /* Hero Section */
   .hero {
     padding: 0 5%;
-    min-height: auto;
+    min-height: 100vh;
     padding-top: 100px;
   }
 
@@ -948,6 +948,7 @@ header.sticky {
 
   /* About Section */
   .about {
+    min-height: 100vh;
     padding: 80px 5%;
   }
 
@@ -1063,10 +1064,6 @@ header.sticky {
 
 /* ============ MOBILE VIEW (480px - 767px) ============ */
 @media screen and (max-width: 767px) {
-  * {
-    font-family: "Poppins", sans-serif;
-  }
-
   header {
     padding: 12px 4%;
   }
@@ -1332,7 +1329,7 @@ header.sticky {
   /* Hero */
   .hero {
     padding: 0 3%;
-    min-height: 90vh;
+    min-height: 100vh;
     padding-top: 70px;
   }
 
@@ -1556,6 +1553,7 @@ header.sticky {
   .hero {
     padding: 0 2%;
     padding-top: 65px;
+    height: 100vh;
   }
 
   .hero-container {
