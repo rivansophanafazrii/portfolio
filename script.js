@@ -1,111 +1,64 @@
-window.addEventListener("scroll", function () {
-  const header = this.document.querySelector("#navbar");
-  // menambahkan class 'sticky' jika scroll lebih dari 50px
-  header.classList.toggle("sticky", this.window.scrollY > 50);
-});
-
-// hero
-const textElement = document.getElementById("typing-text");
-const name = "Rivan Sophana Fazri"; // Ganti dengan namamu
-let index = 0;
-
-function typeEffect() {
-  if (index < name.length) {
-    textElement.innerHTML += name.charAt(index);
-    index++;
-    setTimeout(typeEffect, 100); // Kecepatan mengetik
-  }
-}
-
-document.addEventListener("DOMContentLoaded", typeEffect);
-
 document.addEventListener("DOMContentLoaded", function () {
-  // --- Konfigurasi Typing Effect ---
+  "use strict";
+
+  // --- Sticky header ---
+  const header = document.querySelector("#navbar");
+  window.addEventListener("scroll", () => {
+    header.classList.toggle("sticky", window.scrollY > 50);
+  });
+
+  // --- Mobile menu toggle ---
+  const menu = document.querySelector("#mobile-menu");
+  const menuLinks = document.querySelector(".nav-links");
+  menu?.addEventListener("click", () => {
+    menu.classList.toggle("is-active");
+    menuLinks.classList.toggle("active");
+  });
+
+  // close menu when a link is clicked
+  document.querySelectorAll(".nav-links a").forEach((link) =>
+    link.addEventListener("click", () => {
+      menu.classList.remove("is-active");
+      menuLinks.classList.remove("active");
+    }),
+  );
+
+  // --- Typing effect for role ---
   const typingElement = document.getElementById("typing-role");
-  const words = ["Web Developer"]; // Kata-kata yang akan diketik bergantian
-  let wordIndex = 0;
-  let charIndex = 0;
-  let isDeleting = false;
-  let typeSpeed = 100; // Kecepatan mengetik normal
+  const words = ["Web Developer"];
+  let wordIndex = 0,
+    charIndex = 0,
+    isDeleting = false;
 
-  function typeEffect() {
+  function roleType() {
     const currentWord = words[wordIndex];
-
     if (isDeleting) {
-      // Sedang menghapus karakter
       typingElement.textContent = currentWord.substring(0, charIndex - 1);
       charIndex--;
-      typeSpeed = 50; // Menghapus lebih cepat
     } else {
-      // Sedang mengetik karakter
       typingElement.textContent = currentWord.substring(0, charIndex + 1);
       charIndex++;
-      typeSpeed = 150; // Mengetik normal
     }
 
-    // Jika kata selesai diketik
     if (!isDeleting && charIndex === currentWord.length) {
       isDeleting = true;
-      typeSpeed = 2000; // Jeda lama sebelum mulai menghapus (2 detik)
+      setTimeout(roleType, 2000);
+      return;
     }
-    // Jika kata selesai dihapus
-    else if (isDeleting && charIndex === 0) {
+
+    if (isDeleting && charIndex === 0) {
       isDeleting = false;
-      wordIndex = (wordIndex + 1) % words.length; // Pindah ke kata berikutnya
-      typeSpeed = 500; // Jeda sebentar sebelum mengetik kata baru
+      wordIndex = (wordIndex + 1) % words.length;
     }
 
-    setTimeout(typeEffect, typeSpeed);
+    setTimeout(roleType, isDeleting ? 50 : 150);
   }
 
-  // Jalankan fungsi jika elemennya ada
-  if (typingElement) {
-    typeEffect();
-  }
+  if (typingElement) roleType();
+
+  // scroll to top on load (smooth)
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
-
-// Toggle Mobile Menu
-const menu = document.querySelector("#mobile-menu");
-const menuLinks = document.querySelector(".nav-links");
-
-menu.addEventListener("click", function () {
-  menu.classList.toggle("is-active");
-  menuLinks.classList.toggle("active");
-});
-
-// Close menu when clicking a link
-document.querySelectorAll(".nav-links a").forEach((n) =>
-  n.addEventListener("click", () => {
-    menu.classList.remove("is-active");
-    menuLinks.classList.remove("active");
-  }),
-);
-
-// Sticky Navbar effect
-window.addEventListener("scroll", function () {
-  const header = document.querySelector("#navbar");
-  header.classList.toggle("sticky", window.scrollY > 50);
-});
-
-// Typing Effect (Gunakan kode yang sudah kita buat sebelumnya di sini)
-// ...
-
-function openCertModal(imgSrc, title, issuer, date) {
-  const modal = document.getElementById("certModal");
-  document.getElementById("modalImg").src = imgSrc;
-  document.getElementById("modalTitle").innerText = title;
-  document.getElementById("modalIssuer").innerText = "Issued by " + issuer;
-  document.getElementById("modalDate").innerText = date;
-
-  modal.style.display = "flex";
-  document.body.style.overflow = "hidden"; // Matikan scroll saat modal buka
-}
-
-function closeCertModal() {
-  const modal = document.getElementById("certModal");
-  modal.style.display = "none";
-  document.body.style.overflow = "auto"; // Aktifkan scroll kembali
-}
 
 // Tutup modal jika klik di luar gambar
 window.onclick = function (event) {
@@ -157,7 +110,9 @@ function openCertDetail(category) {
 }
 
 function closeCertModal() {
-  document.getElementById("certModal").style.display = "none";
+  const modal = document.getElementById("certModal");
+  if (modal) modal.style.display = "none";
+  document.body.style.overflow = "auto";
 }
 
 // Contact Form Handler
@@ -177,7 +132,8 @@ function closeCertModal() {
 //   });
 // });
 
-const scriptURL = "https://script.google.com/macros/s/AKfycbw2o2Rqnz2Qt-aS7HlV5SLgB1YEZ-WPYFEo16F-Vj7ZWde19HsLL2ZhOmUrCt9X0484AA/exec";
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbw2o2Rqnz2Qt-aS7HlV5SLgB1YEZ-WPYFEo16F-Vj7ZWde19HsLL2ZhOmUrCt9X0484AA/exec";
 const form = document.forms["submit-to-google-sheet"];
 
 // Konfigurasi Toast (Desain notifikasinya)
@@ -232,10 +188,4 @@ form.addEventListener("submit", (e) => {
 
       console.error("Error!", error.message);
     });
-});
-
-// scroll smooth
-window.scrollTo({
-  top: 0, 
-  behavior: 'smooth'
 });

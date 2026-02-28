@@ -18,7 +18,7 @@
 }
 
 body {
-  background-color: #f5f6fa; /*Dark background agar gradient terlihat menyala */
+  background-color: #f5f6fa; /* light background so gradients pop */
 }
 
 /* header styling */
@@ -93,7 +93,8 @@ header.sticky {
 }
 
 .btn:hover {
-  transform: 0 15px 25px rgba(72, 230, 236, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 15px 25px rgba(72, 230, 236, 0.5);
 }
 
 /* Container Utama */
@@ -156,10 +157,11 @@ header.sticky {
   z-index: 10;
 }
 
-.hero-left h1 {
-  font-size: 4rem;
+..hero-left h1 {
+  font-size: 4.5rem;
   font-weight: 800;
-  margin-bottom: 10px;
+  line-height: 1.1;
+  margin-bottom: 20px;
 }
 
 .hero-left {
@@ -178,11 +180,6 @@ header.sticky {
   font-size: 1.2rem;
   display: block;
   margin-bottom: 10px;
-}
-.hero-left h1 {
-  font-size: 4.5rem;
-  line-height: 1.1;
-  margin-bottom: 20px;
 }
 
 /* --- [BARU] Style untuk Typing Effect --- */
@@ -236,7 +233,6 @@ header.sticky {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* opacity: 0; <--- BARIS INI DIHAPUS */
 }
 
 /* Buttons & Icons */
