@@ -31,16 +31,16 @@
   <body>
     <!-- Header -->
     <header id="navbar">
-      <div class="logo">Rivan <span>Sophana Fazri</span></div>
+      <div class="logo" data-aos="zoom-in">Rivan <span>Sophana Fazri</span></div>
 
-      <div class="menu-toggle" id="mobile-menu">
+      <div class="menu-toggle" id="mobile-menu" data-aos="zoom-in">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
       </div>
 
       <nav>
-        <ul class="nav-links">
+        <ul class="nav-links" data-aos="zoom-out">
           <li><a href="#">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -60,20 +60,20 @@
 
         <div class="hero-container">
           <div class="hero-left">
-            <span class="greeting">Hi, I'm</span>
-            <h1>Rivan Sophana Fazri</h1>
+            <span class="greeting" data-aos="zoom-out">Hi, I'm</span>
+            <h1 data-aos="fade-down">Rivan Sophana Fazri</h1>
 
-            <p class="role-text">
+            <p class="role-text" data-aos="fade-up">
               <span id="typing-role"></span><span class="cursor">|</span>
             </p>
 
-            <div class="hero-btns">
+            <div class="hero-btns" data-aos="fade-right">
               <a href="#" class="btn">Download CV</a>
             </div>
           </div>
 
           <div class="hero-right">
-            <div class="profile-wrapper">
+            <div class="profile-wrapper" data-aos="fade-down">
               <div class="profile-card">
                 <img src="img/profile.jpg" alt="Profile Placeholder" />
               </div>
@@ -166,7 +166,7 @@
                 </div>
                 <div class="skill-item"><i class="fab fa-git-alt"></i> Git</div>
                 <div class="skill-item">
-                  <i class="fab fa-database"></i> MySQL
+                  <i class="fab fa-alt-database"></i> MySQL
                 </div>
                 <div class="skill-item"><i class="fab fa-figma"></i> Figma</div>
               </div>
@@ -238,6 +238,7 @@
 
       <div id="certModal" class="cert-modal">
         <div class="modal-content">
+          <div class="blob-1"></div>
           <span class="close-modal" onclick="closeCertModal()">&times;</span>
           <h2 id="modalTitle">Collection</h2>
           <div class="cert-gallery" id="modalGallery"></div>
@@ -353,7 +354,7 @@
 
     <script>
       AOS.init({
-        // duration: 100, // Anda juga bisa mengatur easing di sini
+        duration: 500, // Anda juga bisa mengatur easing di sini
         easing: "ease-in-out",
         delay: 400,
       });
