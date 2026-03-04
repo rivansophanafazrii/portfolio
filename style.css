@@ -36,6 +36,18 @@ header {
   backdrop-filter: blur(10px);
 }
 
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 5px;
+  background: linear-gradient(90deg, #0984e3, #00cec9, #39f5f2);
+  width: 0%;
+  z-index: 1001;
+  transition: width 0.1s ease;
+  box-shadow: 0 0 10px rgba(9, 132, 227, 0.8);
+}
+
 /* efek sticky saat scroll */
 header.sticky {
   padding: 15px 10%;

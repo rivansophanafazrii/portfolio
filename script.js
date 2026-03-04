@@ -190,3 +190,17 @@ form.addEventListener("submit", (e) => {
       console.error("Error!", error.message);
     });
 });
+
+// --- Progress Bar Animation on Scroll ---
+window.addEventListener("scroll", () => {
+  const progressBar = document.getElementById("myBar");
+  if (!progressBar) return;
+
+  const winScroll =
+    document.body.scrollTop || document.documentElement.scrollTop;
+  const height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  const scrolled = (winScroll / height) * 100;
+  progressBar.style.width = scrolled + "%";
+});
