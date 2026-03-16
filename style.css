@@ -56,18 +56,25 @@ header.sticky {
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.logo {
+/* .logo {
   color: #0984e3;
   font-weight: 800;
   letter-spacing: 1px;
   font-size: 1.2rem;
-  white-space: nowrap; /* Agar nama tidak turun ke bawah */
+  white-space: nowrap; /* Agar nama tidak turun ke bawah *
 }
 
 .logo span {
   background: var(--primary-grad);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+} */
+
+.logo img {
+  width: 50px;
+  height: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .nav-links {
