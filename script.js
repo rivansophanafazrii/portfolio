@@ -105,6 +105,7 @@ function openCertDetail(category) {
             <div class="gallery-item"><img src="img/cert/dicoding/belajar-dasar-data-science.png" alt="belajar-dasar-data-science"><p>Belajar Dasar Data Science</p></div>
             <div class="gallery-item"><img src="img/cert/dibimbing/ui-ux.png" alt="ui-ux"><p>UI/UX Design</p></div>
             <div class="gallery-item"><img src="img/cert/dll/cs-id.png" alt="cs id"><p>Webinar CyberSecurity "Solusi Praktis Membangun Sistem Keamanan Dari Nol"</p></div>
+            <div class="gallery-item"><img src="img/cert/myskill/graphic-design-fundamental.png" alt="cs id"><p>Graphic Design Fundamental</p></div>
         `;
   }
   // Tambahkan kategori lain di sini...
