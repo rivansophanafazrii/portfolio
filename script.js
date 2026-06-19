@@ -101,6 +101,7 @@ function openCertDetail(category) {
   if (category === "other") {
     title.innerText = "Other Certificates";
     gallery.innerHTML = `
+            <div class="gallery-item"><img src="img/cert/bnsp/junior-graphic-designer.png" alt="Junior Graphic Designer"><p>Junior Graphic Designer</p></div>
             <div class="gallery-item"><img src="img/cert/dicoding/belajar-dasar-visualisasi-data.png" alt="belajar-dasar-visualisasi-data"><p>Belajar Dasar Visualisasi Data</p></div>
             <div class="gallery-item"><img src="img/cert/dicoding/belajar-dasar-data-science.png" alt="belajar-dasar-data-science"><p>Belajar Dasar Data Science</p></div>
             <div class="gallery-item"><img src="img/cert/dibimbing/ui-ux.png" alt="ui-ux"><p>UI/UX Design</p></div>
