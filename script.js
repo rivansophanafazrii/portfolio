@@ -107,7 +107,6 @@ function openCertDetail(category) {
             <div class="gallery-item"><img src="img/cert/dibimbing/ui-ux.png" alt="ui-ux"><p>UI/UX Design</p></div>
             <div class="gallery-item"><img src="img/cert/dll/cs-id.png" alt="cs id"><p>Webinar CyberSecurity "Solusi Praktis Membangun Sistem Keamanan Dari Nol"</p></div>
             <div class="gallery-item"><img src="img/cert/myskill/graphic-design-fundamental.png" alt="cs id"><p>Graphic Design Fundamental</p></div>
-            <div class="gallery-item"><img src="img/cert/myskill/junior-graphic-designer.png" alt="cs id"><p>Junior Graphic Designer</p></div>
         `;
   }
   // Tambahkan kategori lain di sini...
